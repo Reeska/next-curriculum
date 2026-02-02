@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import '../globals.css'
+import './globals.css'
 import React from "react";
+import favicon from '../../public/favicon.png'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -10,7 +11,7 @@ export function generateMetadata(): Metadata {
     title: `Thomas Champion - CV - ${new Date().toISOString().substring(0, 10)} - ${Math.random().toString(36).substring(2, 6)}`,
     description: 'Curriculum vitae',
     icons: {
-      icon: '/favicon.png',
+      icon: favicon.src,
     },
   }
 }

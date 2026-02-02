@@ -9,6 +9,8 @@ import fs from "node:fs";
 import YAML from "yaml";
 import { Space_Mono } from "next/font/google";
 import Image from "next/image";
+import profileImg from "../../public/profile.jpg";
+import tardisImg from "../../public/tardis.svg";
 import type { Curriculum } from "./types";
 
 const titleFont = Space_Mono({ weight: '400', subsets: ['latin'] })
@@ -33,7 +35,7 @@ const InfoCol = ({ data }: { data: Curriculum }) => {
     <div className="float-left w-[24%] h-[277mm] mr-4">
       <div className="flex flex-col gap-3">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/profile.jpg" className="w-40 rounded-full h-40 mx-auto object-cover border-4 border-[#4460aa]"
+        <img src={profileImg.src} className="w-40 rounded-full h-40 mx-auto object-cover border-4 border-[#4460aa]"
              alt=""/>
 
         <h1 className={twJoin('text-4xl uppercase font-bold text-center', titleFont.className)}>{data.name}</h1>
@@ -117,7 +119,7 @@ const Main = ({ data }: { data: Curriculum }) => {
                   <span className="h-2 w-3 block bg-white rounded-full absolute -left-5 -top-1"></span> : null}
                 <span
                   className="block absolute -left-8 top-0">
-                  <Image src="/tardis.svg" alt="TARDIS" width={32} height={0}/>
+                  <Image src={tardisImg} alt="TARDIS" width={32} height={0}/>
                 </span>
 
                 <span className="">{project.dates}</span> - <span className="">{project.title} <span
