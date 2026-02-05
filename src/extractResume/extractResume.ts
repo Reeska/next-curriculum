@@ -24,8 +24,7 @@ const cleanHTML = (html: string) =>
     .replace(/(<br>)/g, '\n')
     .replace(/<\/?p>/g, '')
 
-const removeEmojis = (text: string) =>
-  text.replace(/\p{Emoji}/gu, '').trim()
+const removeEmojis = (text: string) => text.replace(/\p{Emoji}/gu, '').trim()
 
 const mapBaseCard = async (
   experience: ElementHandle<SVGElement | HTMLElement>,
