@@ -33,7 +33,7 @@ const Title = ({ className, ...props }: React.PropsWithChildren & { className?: 
 const InfoCol = ({ data }: { data: Curriculum }) => {
   return (
     <div className="float-left w-[24%] h-[277mm] mr-4">
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-6">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={profileImg.src} className="w-40 rounded-full h-40 mx-auto object-cover border-4 border-[#4460aa]"
              alt=""/>
@@ -110,7 +110,7 @@ const Main = ({ data }: { data: Curriculum }) => {
 
       <Title className="mb-5 mt-3 uppercase">Expériences professionnelles</Title>
 
-      <div className="text-[0.70rem] flex-grow flex flex-col gap-2 border-l pl-4 border-blue-600">
+      <div className="text-[0.70rem] flex-grow flex flex-col gap-2 border-l pl-4 border-secondary">
         {data.projects.map((project, index) => (
           <div key={project.dates} className="relative">
             <div className="mb-2">
@@ -132,13 +132,6 @@ const Main = ({ data }: { data: Curriculum }) => {
             </div>
           </div>
         ))}
-
-        {/*<div className="border-2 mx-auto border-gray-500 bg-gray-100 rounded-full h-10 w-3/4 flex items-center">*/}
-        {/*  <span className="h-6 w-10 flex items-center justify-center rounded-full text-xl">+</span>*/}
-        {/*  <span className="text-gray-600">Poser une question</span>*/}
-        {/*  <span*/}
-        {/*    className="h-6 w-6 ml-auto mr-2 flex items-center justify-center rounded-full bg-green-600 text-white">&gt;</span>*/}
-        {/*</div>*/}
       </div>
     </div>
   )
@@ -148,7 +141,7 @@ export default function Mini() {
   const data = getCurriculum();
 
   return (
-    <div className="h-full relative z-1">
+    <div className="h-full relative">
       <InfoCol data={data}/>
       <Main data={data}/>
     </div>
