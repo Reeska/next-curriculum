@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "format": "biome format --write .",
     "extract-resume": "playwright test -g src/extractResume/extractResume.ts",
     "postinstall": "npx playwright install"
   },
@@ -21,14 +23,13 @@
     "yaml": "^2.3.4"
   },
   "devDependencies": {
+    "@biomejs/biome": "2.3.14",
     "@playwright/test": "^1.40.0",
     "@types/mustache": "^4.2.5",
     "@types/node": "^20.9.3",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.0.1",
     "mustache": "^4.2.0",
     "postcss": "^8",
     "tailwindcss": "^3.3.0",

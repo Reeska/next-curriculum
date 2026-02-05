@@ -1,10 +1,8 @@
 import type { Config } from 'tailwindcss'
-import colors from 'tailwindcss/colors';
+import colors from 'tailwindcss/colors'
 
 const config: Config = {
-  content: [
-    './src/**/*.{js,ts,jsx,tsx,mdx,yml}',
-  ],
+  content: ['./src/**/*.{js,ts,jsx,tsx,mdx,yml}'],
   theme: {
     extend: {
       backgroundImage: {
@@ -14,8 +12,8 @@ const config: Config = {
       },
       colors: {
         primary: '#363062',
-        secondary: colors.blue['300']
-      }
+        secondary: colors.blue['300'],
+      },
     },
   },
   plugins: [],

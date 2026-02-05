@@ -11,7 +11,9 @@ This is a Next.js 14 application that generates a professional curriculum vitae 
 - `npm run dev` - Start the Next.js development server (http://localhost:3000)
 - `npm run build` - Build the production application
 - `npm run start` - Start the production server
-- `npm run lint` - Run ESLint
+- `npm run lint` - Run Biome linter
+- `npm run lint:fix` - Run Biome linter with auto-fix
+- `npm run format` - Format code with Biome
 - `npm run extract-resume` - Extract CV data from LinkedIn HTML using Playwright (reads `in/profile.html`, outputs to `src/data/cv.yml`)
 
 ## Architecture

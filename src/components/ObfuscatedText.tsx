@@ -1,13 +1,13 @@
-'use client';
+'use client'
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react'
 
 export default function ObfuscatedText({ encoded }: { encoded: string }) {
-  const [text, setText] = useState('');
+  const [text, setText] = useState('')
 
   useEffect(() => {
-    setText(atob(encoded));
-  }, [encoded]);
+    setText(atob(encoded))
+  }, [encoded])
 
-  return <span>{text}</span>;
+  return <span>{text}</span>
 }

@@ -1,10 +1,13 @@
-import rehypeRaw from 'rehype-raw';
-import ReactMarkdown, { Options } from 'react-markdown';
-import React from 'react';
+import ReactMarkdown, { type Options } from 'react-markdown'
+import rehypeRaw from 'rehype-raw'
 
 const Markdown = ({ rehypePlugins, ...props }: Options) => {
   return (
-      <ReactMarkdown className="markdown" rehypePlugins={[rehypeRaw, ...(rehypePlugins ?? [])]} {...props} />
+    <ReactMarkdown
+      className="markdown"
+      rehypePlugins={[rehypeRaw, ...(rehypePlugins ?? [])]}
+      {...props}
+    />
   )
 }
 
