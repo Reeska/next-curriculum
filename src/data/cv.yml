@@ -122,7 +122,7 @@ projects:
     dates: 2012 - 2016
     duration: 4 ans et 3 mois
     stack: >-
-      **Java 4, 5, 6**, Struts 1 & 2, Spring, SOAP, Hibernate, Oracle, jQuery, Jenkins
+      **Java 4, 5, 6**, Struts 1 & 2, HTML/CSS/jQuery, Spring, SOAP, Hibernate, Oracle, Jenkins
     description: |-
       - RSI : référent technique sur un plateau de 25 personnes. Développement de fonctionnalités pour différentes applications du RSI incluant intégration continue et revues de code. 
       - SGE-L chez ErDF : développement de fonctionnalités pour le portail backoffice de gestion de contrats et de clients.
