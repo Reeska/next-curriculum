@@ -98,7 +98,7 @@ projects:
     dates: sept. 2018 - mai 2020
     duration: 1 an 9 mois
     stack: >-
-      **Angular Universal**, Nest.js, CMS Prismic, Docker, Docker Swarm, Redis
+      **Angular Universal**, Nest.js, GraphQL, CMS Prismic, Docker, Docker Swarm, Redis
     description: |-
       Dans ce projet Scrum composé de 5 développeurs, 2 POs, 1 Scrum master, j'ai :
       - travaillé sur la refonte du site web institutionnel de la banque jusqu'à la mise en production dont j'ai opéré le suivi et le pilotage technique ;
